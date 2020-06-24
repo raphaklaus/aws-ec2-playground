@@ -7,5 +7,5 @@ source .bashrc
 nvm install node
 nvm use node
 
-cd /var/www/html/website
+cd /home/ec2-user/app
 npm install

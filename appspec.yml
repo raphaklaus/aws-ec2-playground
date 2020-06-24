@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/html/website #where to store the artifacts
+    destination: /home/ec2-user/app #where to store the artifacts
 hooks:
   AfterInstall:
     - location: bin/deps.sh
