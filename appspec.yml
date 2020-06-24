@@ -4,7 +4,11 @@ files:
   - source: /
     destination: /var/www/html/website #where to store the artifacts
 hooks:
+  AfterInstall:
+    - location: bin/deps.sh
+      timeout: 100
+      runas: ec2-user
   ApplicationStart:
     - location: bin/start.sh #start script for the website
-      timeout: 300
+      timeout: 100
       runas: ec2-user
