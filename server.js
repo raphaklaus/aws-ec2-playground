@@ -4,7 +4,7 @@ app = express()
 
 app.get('/', (req, res) => {
     res.json({
-        message: 'I am alive! :D'
+        message: 'I am alive! :)'
     })
 })
 
